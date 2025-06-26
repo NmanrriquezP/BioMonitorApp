@@ -1,0 +1,29 @@
+{
+  "name": "biomonitor",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "html2canvas": "^1.4.1",
+    "jspdf": "^3.0.1",
+    "leaflet": "^1.9.4",
+    "lucide-react": "^0.513.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.2",
+    "recharts": "^2.15.3"
+  },
+  "devDependencies": {
+    "@types/estree": "^1.0.8",
+    "@types/node": "^22.15.33",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "typescript": "~5.7.2",
+    "vite": "^6.2.0"
+  }
+}

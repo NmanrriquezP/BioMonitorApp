@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioMonitor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'turquoise-light': '#E0F2F1', 
+              'turquoise-medium': '#50C2C9', 
+              'turquoise-dark': '#00796B',   
+              'pink-light': '#FCE4EC',       
+              'pink-semi-reddish': '#EC407A', 
+              'gray-text': '#4B5563',       
+              'heading-text': '#1F2937',     
+            }
+          }
+        }
+      }
+    </script>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px; /* Thinner scrollbar */
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #50C2C9; /* turquoise-medium */
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #007C83; /* turquoise-dark */
+      }
+      /* Leaflet Popup Customizations */
+      .leaflet-popup-content-wrapper {
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        background-color: white; /* Ensure background */
+      }
+      .leaflet-popup-content {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-size: 13px;
+        line-height: 1.5;
+        margin: 12px !important; /* Slightly more margin */
+        min-width: 150px; /* Prevent too narrow popups */
+      }
+      .leaflet-popup-content b, .leaflet-popup-content strong {
+        color: #00796B; /* turquoise-dark */
+        font-size: 14px;
+        display: block;
+        margin-bottom: 5px;
+      }
+      .leaflet-popup-content p, .leaflet-popup-content small {
+        margin-bottom: 3px;
+      }
+      .leaflet-popup-tip {
+        background: white; 
+      }
+      .leaflet-container a.leaflet-popup-close-button {
+        padding: 6px 6px 0 0;
+        color: #777;
+      }
+      .leaflet-container a.leaflet-popup-close-button:hover {
+        color: #333;
+      }
+      /* Ensure Leaflet map itself resizes correctly if its container does */
+      .leaflet-container {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.6.2",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.513.0",
+    "recharts": "https://esm.sh/recharts@^2.15.3",
+    "jspdf": "https://esm.sh/jspdf@^3.0.1",
+    "html2canvas": "https://esm.sh/html2canvas@^1.4.1",
+    "leaflet": "https://esm.sh/leaflet@^1.9.4"
+  }
+}
+</script>
+<!-- Leaflet JavaScript -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-gray-50 text-gray-text antialiased">
+    <div id="root"></div>
+    <script type="module" src="/index.js"></script> 
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

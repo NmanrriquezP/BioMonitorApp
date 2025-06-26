@@ -1,0 +1,5 @@
+{
+  "name": "BioMonitor",
+  "description": "A React web application for vital signs monitoring. Users can register profiles, measure vital signs (temperature, heart rate, ECG), view history, and export reports. All measurements are within normal ranges.",
+  "requestFramePermissions": ["geolocation"]
+}
