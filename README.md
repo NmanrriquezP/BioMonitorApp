@@ -1,14 +1,20 @@
-# Run and deploy your AI Studio app
+## 🩺 Acerca de la aplicación
 
-This contains everything you need to run your app locally.
+**BioMonitor** es una aplicación web para el monitoreo en tiempo real de signos vitales como ECG, frecuencia cardíaca y temperatura corporal. Está diseñada para personas con afecciones cardiovasculares y adultos mayores, permitiéndoles controlar su salud desde cualquier lugar.
 
-## Run Locally
+Características principales:
+- Medición en tiempo real de signos vitales
+- Alertas ante valores anormales
+- Generación de fichas médicas en PDF
+- Almacenamiento local de datos (sin servidor)
+- Geolocalización de centros médicos cercanos
 
-**Prerequisites:**  Node.js
+## 🧑‍⚕️ Tecnologías utilizadas
+
+- React + TypeScript
+- Tailwind CSS
+- API localStorage
+- OpenStreetMap + Leaflet.js + Nominatim
+- html2pdf.js
 
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
